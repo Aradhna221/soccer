@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="matches_styles.css">
+  <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title>SoccerVerse</title>
+</head>
+
+<body>
+
+
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo6.png" style="height: 30%;" width="30%" alt="">
+    </div>
+    <div class="menu-icon">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="#video-background"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="#match"><i class="fas fa-heart"></i>Match</a></li>
+      <li><a href="#top-10"><i class="fas fa-chart-line"></i>Top 10</a></li>
+      <li><a href="#gallery"><i class="fas fa-images"></i>Gallery</a></li>
+      <li><a href="#feedback"><i class="fas fa-comment"></i>Feedback</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i>Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+
+  <video id="video-background" autoplay muted loop>
+    <source src="images/main_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- About Section -->
+
+
+  <section id="about">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-4">
+          <img src="images/about us.png" class="ab" style="height: 300px; width: 300px;">
+        </div>
+        <div class="col-lg-5">
+          <h1>About Soccer</h1>
+          <div class="divider my-4"></div>
+          <p >Soccer, also known as football in most parts of the world, is a globally popular sport played between two
+            teams, each striving to score goals by getting a ball into the opposing team's net. Played on a rectangular
+            field, soccer involves skillful footwork, teamwork, and strategy. It captures the hearts of millions with
+            its fast-paced action, dramatic goals, and the unity it fosters among fans worldwide.</p>
+          <a href="#" class="btn btn-danger" id="bt">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="home">
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search players or tournaments..." class="searchInput" />
+      <button id="searchButton">Search</button>
+  </section>
+  <section id="match">
+
+    <section class="Touranament_matches">
+      <h2 class="text-center mb-4">TOURNAMENTS</h2>
+      <div class="filtering" id="tournament">
+        <label class="checkbox-container">
+          CONMEBOL SUDAMERICANA
+          <input type="checkbox" class="tournament_identifier" value="CS">
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox-container">
+          UEFA Champions League
+          <input type="checkbox" class="tournament_identifier" value="UCL">
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox-container">
+          UEFA Europa League
+          <input type="checkbox" class="tournament_identifier" value="UEL">
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox-container">
+          Premier League
+          <input type="checkbox" class="tournament_identifier" value="PL">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </section>
+
+    <div class="match-content">
+      <h2 id="h2" style="color: black;">Schedules</h2>
+      <div id="buttons_section" class="row table-bordered mb-4">
+        <div class="btn col-md-4 col-sm-4 btn-dark" id="pre">Results</div>
+        <div class="btn col-md-4 col-sm-4  btn-dark active" id="tod">Today</div>
+        <div class="btn col-md-4 col-sm-4 btn-dark " id="upc">Upcoming</div>
+      </div>
+    </div>
+
+
+    <div id="show_content" class="row match_cards_contents w-100 d-flex ml-3 ">
+
+
+
+      <!-- preivous matches section -->
+
+      <div id="pr_mt1" class="match-card-content col-md-3 col-sm-5 mb-5 previous_matches" data-tag="CS">
+        <span class="text-center">CONMEBOL SUDAMERICANA</span>
+        <span class="text-center"></span>
+        <div class="team-images">
+          <img src="images/RAK.png" alt="Team 1" />
+          <img src="images/ARI.png" alt="Team 2" />
+        </div>
+        <div class="team-images">
+          <span>RAK</span>
+          <span>VS</span>
+          <span>ARI</span>
+        </div>
+        <h3>Round 4rth</h3>
+        <p>Date: August 08, 2023</p>
+        <h5 class="text-center">Score</h5>
+        <div class="score d-flex">
+          <span>2</span>
+          <span>-</span>
+          <span>1</span>
+        </div>
+      </div>
+
+      <!-- popup window -->
+      <div class="popup_1" id="pr_mt1_Content">
+        <h3>Team Squad</h3>
+
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/RAK.png" alt="" class="imag_mt"></th>
+              <th><img src="images/ARI.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Marcelo grohe</td>
+              <td>Omar Hawsawi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ahmad hegazy</td>
+              <td>Madallah Alolayan</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Fabinho</td>
+              <td>Jota</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Marcelo grohe</td>
+              <td>Sultan</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Romarinho grohe</td>
+              <td>Omar Ghram</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Marcelo grohe</td>
+              <td>Hawsawi</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Khaled grohe</td>
+              <td> Karim</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Marcelo grohe</td>
+              <td>Omar</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Munaf</td>
+              <td>Ghaleb</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Ammar</td>
+              <td>Youssef</td>
+            </tr>
+            <!-- Repeat for more players -->
+          </tbody>
+        </table>
+        <p>Winner : <img src="images/RAK.png" alt="" class="imag_mt"></p>
+        <p>Match Results:</p>
+        <ul>
+          <li><img src="images/RAK.png" alt="" class="imag_mt"> : 2</li>
+          <li><img src="images/ARI.png" alt="" class="imag_mt"> : 1</li>
+          <!-- Add more match results here -->
+        </ul>
+        <button id="pr_mt1_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+
+
+
+
+
+      <div id="pr_mt2" class="match-card-content col-md-3 col-sm-5  mb-5 previous_matches" data-tag="UCL">
+        <span class="text-center">UEFA Champions League</span>
+        <div class="team-images">
+          <img src="images/PSV.png" alt="Team 1" />
+          <img src="images/STU.png" alt="Team 2" />
+        </div>
+        <div class="team-images">
+          <span>PSV</span>
+          <span>VS</span>
+          <span>STU</span>
+        </div>
+        <h3>Round : 9</h3>
+        <p>Date: August 03, 2023</p>
+        <h5 class="text-center">Score</h5>
+        <div class="score d-flex">
+          <span>4</span>
+          <span>-</span>
+          <span>1</span>
+        </div>
+      </div>
+
+
+      <!-- popup window -->
+
+      <div class="popup_1" id="pr_mt2_Content">
+        <h3>Team Squad</h3>
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/PSV.png" alt="" class="imag_mt"></th>
+              <th><img src="images/STU.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Hajrovic</td>
+              <td>Omar Muayid</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Makkari hegazy</td>
+              <td>Bunjaku Alolayan</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Gebreyesus</td>
+              <td>Shkelqim</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Yannick grohe</td>
+              <td>Sultan</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Bunjaku grohe</td>
+              <td>Omar Gashi</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Jaddour grohe</td>
+              <td>Toure</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Khaled grohe</td>
+              <td> Karim</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Bousnina grohe</td>
+              <td>Gashi</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Gebreyesus</td>
+              <td>Ghaleb</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Ammar</td>
+              <td>Olivier</td>
+            </tr>
+            <!-- Repeat for more players -->
+          </tbody>
+        </table>
+        <p>Winner : <img src="images/PSV.png" alt="" class="imag_mt"></p>
+        <p>Match Results:</p>
+        <ul>
+          <li><img src="images/PSV.png" alt="" class="imag_mt"> : 4</li>
+          <li><img src="images/STU.png" alt="" class="imag_mt"> : 1</li>
+          <!-- Add more match results here -->
+        </ul>
+        <button id="pr_mt2_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+
+
+
+
+      <div id="pr_mt3" class="match-card-content col-md-3 col-sm-5 mb-5 previous_matches" data-tag="UCL">
+        <span class="text-center">UEFA Champions League</span>
+        <div class="team-images">
+          <img src="images/MOL.png" alt="Team 1" />
+          <img src="images/KÍ.png" alt="Team 2" />
+        </div>
+        <div class="team-images">
+          <span>MOL</span>
+          <span>VS</span>
+          <span>KÍ</span>
+        </div>
+        <h3>Round 8</h3>
+        <p>Date: JULY 15, 2023</p>
+        <h5 class="text-center">Score</h5>
+        <div class="score d-flex">
+          <span>2</span>
+          <span>-</span>
+          <span>3</span>
+        </div>
+      </div>
+
+
+      <!-- popup window -->
+
+      <div class="popup_1" id="pr_mt3_Content">
+        <h3>Team Squad</h3>
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/MOL.png" alt="" class="imag_mt"></th>
+              <th><img src="images/KÍ.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Demhasaj</td>
+              <td>Kronig</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Makkari hegazy</td>
+              <td>Olivier Alolayan</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Jackle</td>
+              <td>Jordan</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Yannick grohe</td>
+              <td>Sultan</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Appiah grohe</td>
+              <td>Michael</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Silvio </td>
+              <td>Baumann</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Maier grohe</td>
+              <td> Kastrijot</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Bousnina Sofian</td>
+              <td>Gashi</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Gebreyesus</td>
+              <td>Ghaleb</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Bahloul</td>
+              <td>Lavdim</td>
+            </tr>
+            <!-- Repeat for more players -->
+          </tbody>
+        </table>
+        <p>Winner : <img src="images/KÍ.png" alt="" class="imag_mt"></p>
+        <p>Match Results:</p>
+        <ul>
+          <li><img src="images/MOL.png" alt="" class="imag_mt"> : 2</li>
+          <li><img src="images/KÍ.png" alt="" class="imag_mt"> : 3</li>
+          <!-- Add more match results here -->
+        </ul>
+        <button id="pr_mt3_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+
+
+
+
+      <!-- today matches       -->
+
+      <div id="td_mt1" class="match-card-content col-md-3 col-sm-5 mb-5 today_matches" data-tag="CS">
+        <span class="text-center">CONMEBOL SUDAMERICANA</span>
+        <div class="team-images">
+          <img src="images/SAO.png" alt="Team 1" />
+          <img src="images/uuid_2sciofe2reang4qdncm1bihgr.png" alt="Team 2" />
+        </div>
+        <div class="team-images">
+          <span>SAO</span>
+          <span>VS</span>
+          <span>SLO</span>
+        </div>
+        <h3>Round : 16</h3>
+        <p>Finished</p>
+        <h5 class="text-center">Score</h5>
+        <div class="score d-flex">
+          <span>0</span>
+          <span>-</span>
+          <span>1</span>
+        </div>
+        <span>SLO WON</span>
+      </div>
+
+
+      <!-- Custom Pop-up -->
+
+      <div class="popup_1" id="td_mt1_Content">
+        <h3>Team Squad</h3>
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/SAO.png" alt="" class="imag_mt"></th>
+              <th><img src="images/uuid_2sciofe2reang4qdncm1bihgr.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Marcelo grohe</td>
+              <td>Omar Hawsawi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ahmad hegazy</td>
+              <td>Madallah Alolayan</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Fabinho</td>
+              <td>Jota</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Marcelo grohe</td>
+              <td>Sultan</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Romarinho grohe</td>
+              <td>Omar Ghram</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Marcelo grohe</td>
+              <td>Hawsawi</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Khaled grohe</td>
+              <td> Karim</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Marcelo grohe</td>
+              <td>Omar</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Munaf</td>
+              <td>Ghaleb</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Ammar</td>
+              <td>Youssef</td>
+            </tr>
+            <!-- Repeat for more players -->
+          </tbody>
+        </table>
+        <p>Winner : <img src="images/uuid_2sciofe2reang4qdncm1bihgr.png" alt="" class="imag_mt"></p>
+        <p>Match Results:</p>
+        <ul>
+          <li><img src="images/SAO.png" alt="" class="imag_mt"> : 0</li>
+          <li><img src="images/uuid_2sciofe2reang4qdncm1bihgr.png" alt="" class="imag_mt"> : 1</li>
+          <!-- Add more match results here -->
+        </ul>
+        <button id="td_mt1_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+
+
+
+
+
+      <div id="td_mt2" class="match-card-content col-md-3 col-sm-5  mb-5 today_matches" data-tag="UEL">
+        <span class="text-center">UEFA Europa League</span>
+        <div class="team-images">
+          <img src="images/ŽAL.png" alt="Team 1" />
+          <img src="images/BKH.png" alt="Team 2" />
+        </div>
+        <div class="team-images">
+          <span>ŽAL</span>
+          <span>VS</span>
+          <span>BKH</span>
+        </div>
+        <h3>Round : 3rd</h3>
+        <p>Today</p>
+        <p>Time: 19:00</p>
+      </div>
+
+
+      <!-- Custom Pop-up -->
+
+      <div class="popup_1" id="td_mt2_Content">
+        <h3>Team Squad</h3>
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/ŽAL.png" alt="" class="imag_mt"></th>
+              <th><img src="images/BKH.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ayoub</td>
+              <td>Omar Hawsawi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ahmad Aymen</td>
+              <td>Madallah Alolayan</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Fabinho</td>
+              <td>Sabri</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Marcelo grohe</td>
+              <td>Sultan</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Dahmen Zammouri</td>
+              <td>Omar Ghram</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Marcelo Bahri</td>
+              <td>Zammouri</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Khaled grohe</td>
+              <td> Karim</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Mhadhebi grohe</td>
+              <td>Mahmoud</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Munaf</td>
+              <td>Ghaleb</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Winterthur</td>
+              <td>Meshaal</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <p>Match Time: 19:00</p>
+
+        <button id="td_mt2_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+
+
+
+      <div id="td_mt3" class="match-card-content col-md-3 col-sm-5 mb-5 today_matches" data-tag="UEL">
+        <span class="text-center">UEFA Europa League</span>
+        <div class="team-images">
+          <img src="images/HJK.png" alt="HJK" />
+          <img src="images/QAR.png" alt="QAR" />
+        </div>
+        <div class="team-images">
+          <span>HJK</span>
+          <span>VS</span>
+          <span>QAR</span>
+        </div>
+        <h3>Round : 3rd</h3>
+        <p>Today</p>
+        <p>Time: 21:00</p>
+      </div>
+
+
+
+
+      <!-- Custom Pop-up -->
+
+      <div class="popup_1" id="td_mt3_Content">
+        <h3>Team Squad</h3>
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/HJK.png" alt="" class="imag_mt"></th>
+              <th><img src="images/QAR.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Sheeb</td>
+              <td>Yousef Hawsawi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mohammed Aymen</td>
+              <td>Paulo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Fabinho</td>
+              <td>Boualem</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Musab grohe</td>
+              <td>Sultan</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Schaffhausen Zammouri</td>
+              <td>Mayouf Ghram</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Mohammad Bahri</td>
+              <td>Barsham</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Saïss grohe</td>
+              <td> Musab</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Hazbavi grohe</td>
+              <td>Owais</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Albulayhi</td>
+              <td>Watyan</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Hyun</td>
+              <td>Abdulhamid</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <p>Match Time: 21:00</p>
+
+        <button id="td_mt3_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+
+      <!-- Upcoming matches -->
+
+      <div id="up_mt1" class="match-card-content col-md-3 col-sm-5 mb-5  upcoming_matches" data-tag="PL">
+        <span class="text-center">Premier League</span>
+        <div class="team-images">
+          <img src="images/ARS.png" alt="Team 1" />
+          <img src="images/NFO.png" alt="Team 2" />
+        </div>
+        <div class="team-images">
+          <span>ARS</span>
+          <span>VS</span>
+          <span>NFO</span>
+        </div>
+        <h3>Round : 8</h3>
+        <p>Date: August 15, 2023</p>
+        <p>Time: 19:00</p>
+      </div>
+
+
+
+
+
+      <!-- Custom Pop-up -->
+
+      <div class="popup_1" id="up_mt1_Content">
+        <h3>Team Squad</h3>
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/ARS.png" alt="" class="imag_mt"></th>
+              <th><img src="images/NFO.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Sheeb</td>
+              <td>Otávio Hawsawi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Salman Aymen</td>
+              <td>Paulo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Tarek</td>
+              <td>Boualem</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Musab Suhail</td>
+              <td>Sultan</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Abdullah Zammouri</td>
+              <td>Mayouf Ghram</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Schaffhausen Bahri</td>
+              <td>Barsham</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Saïss grohe</td>
+              <td> Musab</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Hazbavi grohe</td>
+              <td>Owais</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Koulibaly</td>
+              <td>Abdulhamid</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Hyun</td>
+              <td>Mayouf</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <p>Match Time: 21:00</p>
+
+        <button id="up_mt1_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+
+
+
+      <div id="up_mt2" class="match-card-content col-md-3 col-sm-5  mb-5 upcoming_matches" data-tag="PL">
+        <span class="text-center">Premier League</span>
+
+        <div class="team-images">
+          <img src="images/BRN.png" alt="Team 1" />
+          <img src="images/MCI.png" alt="Team 2" />
+        </div>
+        <div class="team-images">
+          <span>BRN</span>
+          <span>VS</span>
+          <span>MCI</span>
+        </div>
+        <h3>Round 7</h3>
+        <p>Date: August 20, 2023</p>
+        <p>Time: 18:00</p>
+      </div>
+
+
+      <!-- popup window -->
+
+      <div class="popup_1" id="up_mt2_Content">
+        <h3>Team Squad</h3>
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/ARS.png" alt="" class="imag_mt"></th>
+              <th><img src="images/NFO.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Hyun</td>
+              <td>Otávio Hawsawi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Salman Suhail</td>
+              <td>Paulo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Chiasso</td>
+              <td>Boualem</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Tagnaouti Suhail</td>
+              <td>Henin</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Abdullah Zammouri</td>
+              <td>Mayouf Ghram</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Schaffhausen Bahri</td>
+              <td>Barsham</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Yahia grohe</td>
+              <td> Ayoub</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Hazbavi grohe</td>
+              <td>Aboulfath</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Kriens</td>
+              <td>Abdulhamid</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Hyun</td>
+              <td>Nashnoush</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <p>Match Time: 18:00</p>
+
+        <button id="up_mt2_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+      <div id="up_mt3" class="match-card-content col-md-3 col-sm-5 mb-5 upcoming_matches" data-tag="UEL">
+        <span class="text-center">UEFA Europa League</span>
+        <div class="team-images">
+          <img src="images/EVE.png" alt="Team 1" />
+          <img src="images/FUL.png" alt="Team 2" />
+        </div>
+        <div class="team-images">
+          <span>EVE</span>
+          <span>VS</span>
+          <span>FUL</span>
+        </div>
+        <h3>Round : 8</h3>
+        <p>Date: August 25, 2023</p>
+        <p>Time: 22:00</p>
+      </div>
+
+
+      <!-- popup window -->
+
+      <div class="popup_1" id="up_mt3_Content">
+        <h3>Team Squad</h3>
+        <table class="table table-bordered text-center .table_setting">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><img src="images/EVE.png" alt="" class="imag_mt"></th>
+              <th><img src="images/FUL.png" alt="" class="imag_mt"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mustafa</td>
+              <td>Otávio Hawsawi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Bousnina Suhail</td>
+              <td>Paulo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Muayid</td>
+              <td>Boualem</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Khamis Suhail</td>
+              <td>Henin</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Makkari Zammouri</td>
+              <td>Mayouf Ghram</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Kartikila Bahri</td>
+              <td>Barsham</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Yahia Ossama</td>
+              <td> Xamax</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Neuchâtel grohe</td>
+              <td>Aboulfath</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Bousnina</td>
+              <td>Abdulhamid</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Munir</td>
+              <td>Muayid</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <p>Match Time: 22:00</p>
+
+        <button id="up_mt3_closePopupButton" type="button" class="btn btn-secondary">Close</button>
+      </div>
+
+  </section>
+
+
+  <section id="tab">
+    <div id="match1" class="container points-table">
+
+      <H2 class="text-center text-dark">POINTS TABLE</H2>
+
+      <table id="tbl" style="width: 50%;margin-inline: auto;background-image: url(images/points.jpg); background-repeat: no-repeat;background-size: 100% 100%; color: black; border: 1px solid black;"
+        class="table table-striped text-center table-bor">
+        <tr id="tableheading" style="border: 1px solid black;">
+          <th>P</th>
+          <th>Team</th>
+          <th>W</th>
+          <th>D</th>
+          <th>L</th>
+          <th>PTS</th>
+        </tr>
+
+        <tr>
+          <td class="text-light"> 1</td>
+          <td class="text-light">PSG</td>
+          <td class="text-light">22</td>
+          <td class="text-light">3</td>
+          <td class="text-light">2</td>
+          <td class="text-light">140</td>
+        </tr>
+        <tr>
+          <td class="text-light"> 2</td>
+          <td class="text-light">Juvendus</td>
+          <td class="text-light">20</td>
+          <td class="text-light">5</td>
+          <td class="text-light">1</td>
+          <td class="text-light">140</td>
+        </tr>
+        <tr>
+          <td class="text-light"> 3</td>
+          <td class="text-light">Liver Pool</td>
+          <td class="text-light">24</td>
+          <td class="text-light">7</td>
+          <td class="text-light">4</td>
+          <td class="text-light">145</td>
+        </tr>
+        <tr>
+          <td class="text-light"> 4</td>
+          <td class="text-light">Manchester-City</td>
+          <td class="text-light">20</td>
+          <td class="text-light">8</td>
+          <td class="text-light">9</td>
+          <td class="text-light">155</td>
+        </tr>
+        <tr>
+          <td class="text-light"> 5</td>
+          <td class="text-light">Hamburger SV</td>
+          <td class="text-light">12</td>
+          <td class="text-light">6</td>
+          <td class="text-light">7</td>
+          <td class="text-light">110</td>
+        </tr>
+        <tr>
+          <td class="text-light"> 6</td>
+          <td class="text-light">FC Araau</td>
+          <td class="text-light">24</td>
+          <td class="text-light">9</td>
+          <td class="text-light">4</td>
+          <td class="text-light">100</td>
+        </tr>
+        <tr>
+          <td class="text-light"> 7</td>
+          <td class="text-light">FC Thun</td>
+          <td class="text-light">30</td>
+          <td class="text-light">4</td>
+          <td class="text-light">8</td>
+          <td class="text-light">105</td>
+        </tr>
+        <tr>
+          <td class="text-light"> 8</td>
+          <td class="text-light">Paksi SE</td>
+          <td class="text-light">27</td>
+          <td class="text-light">8</td>
+          <td class="text-light">10</td>
+          <td class="text-light">95</td>
+        </tr>
+      </table>
+
+
+
+
+  </section>
+
+
+
+  <section id="top-10">
+    <div class="container">
+      <h1 id="top2">Top 10 Players</h1>
+      <label id="h3" for="sortOrder">
+        <h3>Sort Order:</h3>
+      </label>
+      <select id="sortOrder">
+        <option value="lowTohigh">High to Low</option>
+        <option value="highToLow">Low to High</option>
+      </select>
+      <div class="gallery" id="gallery2">
+        <div class="img-box player-card" data-player="ronaldo" data-id="2">
+          <img src="images/ronaldo.jpg" alt="Cristiano Ronaldo">
+          <h3>Christiano Ronaldo</h3>
+          <div class="player-info">
+            <p>Goals: 700</p>
+            <p>Assists: 200</p>
+            <p>Points: 900</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="messi" data-id="1">
+          <img src="images/messi.jpg" alt="Lionel Messi">
+          <h3>Lionel Messi</h3>
+          <div class="player-info">
+            <p>Goals: 800</p>
+            <p>Assists: 300</p>
+            <p>Points: 1100</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="neymar" data-id="4">
+          <img src="images/neymar.jpg" alt="Neymar Jr.">
+          <h3>Neymar Jr.</h3>
+          <div class="player-info">
+            <p>Goals: 400</p>
+            <p>Assists: 250</p>
+            <p>Points: 650</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="lewandowski" data-id="3">
+          <img src="images/robert.jpg" alt="Robert Lewandowski">
+          <h3>Robert Lewandowski</h3>
+          <div class="player-info">
+            <p>Goals: 600</p>
+            <p>Assists: 150</p>
+            <p>Points: 750</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="salah" data-id="5">
+          <img src="images/salah.jpg" alt="Mohamed Salah">
+          <h3>Mohamed Salah</h3>
+          <div class="player-info">
+            <p>Goals: 300</p>
+            <p>Assists: 100</p>
+            <p>Points: 400</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="mbappe" data-id="8">
+          <img src="images/mbappe.jpg" alt="Kylian Mbappé">
+          <h3>Kylian Mbappé</h3>
+          <div class="player-info">
+            <p>Goals: 200</p>
+            <p>Assists: 75</p>
+            <p>Points: 275</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="ramos" data-id="10">
+          <img src="images/sergio.jpg" alt="Sergio Ramos">
+          <h3>Sergio Ramos</h3>
+          <div class="player-info">
+            <p>Goals: 100</p>
+            <p>Assists: 50</p>
+            <p>Points: 150</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="debruyne" data-id="6">
+          <img src="images/kevin.jpg" alt="Kevin De Bruyne">
+          <h3>Kevin De Bruyne</h3>
+          <div class="player-info">
+            <p>Goals: 120</p>
+            <p>Assists: 200</p>
+            <p>Points: 320</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="benzema" data-id="7">
+          <img src="images/karim.jpg" alt="Karim Benzema">
+          <h3>Karim Benzema</h3>
+          <div class="player-info">
+            <p>Goals: 180</p>
+            <p>Assists: 100</p>
+            <p>Points: 280</p>
+          </div>
+        </div>
+        <div class="img-box player-card" data-player="kane" data-id="9">
+          <img src="images/harry.jpg" alt="Harry Kane">
+          <h3>Harry Kane</h3>
+          <div class="player-info">
+            <p>Goals: 150</p>
+            <p>Assists: 80</p>
+            <p>Points: 230</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup-content">
+        <div class="portrait">
+          <img id="playerPortrait" src="" alt="">
+        </div>
+        <div class="details">
+          <div class="header">
+            <img id="countryFlag" src="" alt="">
+            <img id="teamLogo" src="" alt="">
+          </div>
+          <h1 id="playerName"></h1>
+          <div id="playerBio"></div>
+
+          <div class="stats">
+            <div class="tab international" id="internationalTab">International Stats</div>
+            <div class="tab allTime" id="allTimeTab">All-time Stats</div>
+            <table class="stats-table internationalStats" id="internationalStats"></table>
+            <table class="stats-table allTimeStats" id="allTimeStats"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tournament tournament_pic" id="tournamentClubs"   >
+    <h2 class="section-heading">Tournament Clubs</h2>
+    <div class="tournament-list">
+      <div class="tournament-card">
+        <img src="images/conmebal.jpg" alt="Tournament 1" class="imag_mt">
+        <h3>CONMEBOL SUDAMERICANA</h3>
+        <p>Start Date: September 15, 2023</p>
+        <p>End Date: December 15, 2023</p>
+        <hr>
+        <div class="table-center1">
+          <table class="team-table">
+            <tbody id="play_data1" class="text-center">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tournament-card ">
+        <img src="images/champions.png" alt="Tournament 2" class="imag_mt">
+        <h3>UEFA Champions League</h3>
+        <p>Start Date: August 15, 2023</p>
+        <p>End Date: January 20, 2024</p>
+        <hr>
+        <div class="table-center1">
+          <table class="team-table">
+            <tbody id="play_data2">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tournament-card ">
+        <img src="images/europa.png" alt="Tournament 3" class="imag_mt">
+        <h3>UEFA Europa League</h3>
+        <p>Start Date: December 25, 2023</p>
+        <p>End Date: Febuary 20, 2024</p>
+        <hr>
+        <div class="table-center1">
+          <table class="team-table">
+            <tbody id="play_data3">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tournament-card">
+        <img src="images/premier.png" alt="Tournament 4" class="imag_mt">
+        <h3>Premier League</h3>
+        <p>Start Date: july 25, 2023</p>
+        <p>End Date: August 20, 2023</p>
+        <hr>
+        <div class="table-center1">
+          <table class="team-table">
+            <tbody id="play_data4">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" class="points-table text-dark" >
+    <h1 id="h1-gallery">Players Gallery</h1>
+    <div class="slider">
+      <span style="--i:1;"><img src="images/Virgil van Dijk.jpg" alt=""></span>
+      <span style="--i:2;"><img src="images/Marco Reus.jpg" alt=""></span>
+      <span style="--i:3;"><img src="images/Paulo Dybala.jpg" alt=""></span>
+      <span style="--i:4;"><img src="images/riyadmahrez.png" alt=""></span>
+      <span style="--i:5;"><img src="images/Joshua Kimmich.jpg" alt=""></span>
+      <span style="--i:6;"><img src="images/Karim Benzema.jpg" alt=""></span>
+      <span style="--i:7;"><img src="images/Thiago Alcântara.webp" alt=""></span>
+      <span style="--i:8;"><img src="images/Raheem Sterling.jpg" alt=""></span>
+      <span style="--i:9;"><img src="images/Eden Hazard.jpg" alt=""></span>
+      <span style="--i:10;"><img src="images/Erling Haaland.jpg" alt=""></span>
+      <span style="--i:11;"><img src="images/Antoine Griezmann.jpg" alt=""></span>
+      <span style="--i:12;"><img src="images/Bruno Fernandes.jpg" alt=""></span>
+    </div>
+  </section>
+  
+
+  <section class="feedback" id="feedback">
+    <div class="container">
+      <h2>What Our Users Say</h2>
+      <div class="feedback-card">
+        <div class="feedback-info">
+          <img src="images/man.jpg" alt="User 1">
+          <div class="feedback-text">
+            <p>"The soccer news on this website is always up-to-date. I love it!"</p>
+            <span>- John Doe</span>
+          </div>
+        </div>
+      </div>
+      <div class="feedback-card">
+        <div class="feedback-info">
+          <img src="images/woman.jpg" alt="User 2">
+          <div class="feedback-text">
+            <p>"The match analysis provided here is detailed and insightful. Great job!"</p>
+            <span>- Jane Smith</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="submit-feedback-btn">Submit Your Feedback</button>
+
+    <!-- Add this popup at the end of your HTML body -->
+    <div class="popup2" id="feedbackPopup2">
+      <div class="popup2-content">
+        <span class="close-popup2" id="closeFeedbackPopup2">&times;</span>
+        <h3>Submit Your Feedback</h3>
+        <textarea id="feedbackTextarea" placeholder="Enter your feedback..."></textarea>
+        <button id="submitFeedbackBtn">Submit</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+
+    <div class="section-header">
+      <div class="container1 ">
+        <h2 id="p" style="color: white;">Contact Us</h2>
+        <p id="p" style="color: white;">Feel free to reach out to us at SoccerVerse for all your football updates and inquiries! Contact us at
+          BitnsnBytes@aptechgdn.net or through our contact form on the website.</p>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="row">
+
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+
+            <div class="contact-info-content">
+              <h4 style="color: white;">Address</h4>
+              <p style="color: white;">BitesnBytes, aptech garden<br /> karachi, Pakistan, <br />71000</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+
+            <div class="contact-info-content">
+              <h4 style="color: white;">Phone</h4>
+              <p style="color: white;">+9236228292</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="contact-info-content">
+              <h4 style="color: white;">Email</h4>
+              <p style="color: white;">BitnsnBytes@aptechgdn.net</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="" id="contact-form">
+            <h2 style="color: black;">Send Message</h2>
+            <div class="input-box">
+              <input type="text" required="true" name="">
+              <span>Full Name</span>
+            </div>
+
+            <div class="input-box">
+              <input type="email" required="true" name="">
+              <span>Email</span>
+            </div>
+
+            <div class="input-box">
+              <textarea required="true" name=""></textarea>
+              <span>Type your Message...</span>
+            </div>
+
+            <div class="input-box">
+              <input type="submit" value="Send" name="">
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="map_sec bg-gradient">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="map_inner ">
+            <h4 id="p1">Find Us on Google Map</h4>
+            <p id="p1">Feel free to reach out to us at SoccerVerse for all your football updates and inquiries! Contact us at
+              BitnsnBytes@aptechgdn.net Or Find us on this location</p>
+            <div class="map_bind">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<center>
+  <section class="site-table">
+    <div class="site-map">
+      <img src="images/site_map.png" alt="">
+    </div>
+  </section>
+</center>
+
+  <footer>
+    <div class="container4">
+      <div class="row">
+        <div class="col" id="company">
+          <img src="images/logo6.png" alt="" class="footer_logo">
+          <p>Soccer scores websites provide real-time updates and statistics on matches and events in the world of
+            soccer.
+          </p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col" id="services">
+          <h3>Services</h3>
+          <div class="links">
+            <a href="#match">Live Match Updates</a>
+            <a href="#top-10">Player Profiles</a>
+            <a href="#tournamentClubs">Soccer League</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>BitesnBytes, aptech garden <br> </p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+9236228292</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form">
+          <form action="">
+            <input type="text" placeholder="Email here..." class="bg-light">
+            <button><i class="fa fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Rest of your website content goes here -->
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+  <script src="match_details.js"></script>
+  <script src="search.js"></script>
+
+</body>
+
+</html>

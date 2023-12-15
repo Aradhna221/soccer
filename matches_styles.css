@@ -1,0 +1,230 @@
+#match {
+  /* background-color: rgb(85, 80, 80); */
+  background-image: url(images/soccer-ball\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.match-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.match-content h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #333;
+}
+
+.match_cards_contents {
+  justify-content: space-evenly;
+}
+
+.match-card-content {
+  background-color: rgba(211, 211, 211, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  animation: cardAppear 0.3s ease-in-out;
+}
+
+.match-card-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.team-images img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add animation */
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.score {
+  justify-content: space-between;
+}
+
+.previous_matches {
+  display: none;
+}
+
+.upcoming_matches {
+  display: none;
+}
+
+.imag_mt {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.popup_1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(76, 205, 50);
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 70% !important; /* Adjust the width as needed */
+  max-height: 70vh; /* Adjust the height as needed */
+  overflow-y: auto;
+  display: none; 
+  position: absolute;/* This line is redundant; remove it */
+  z-index: 100;/* z-index should be an integer value, not "50px" */
+  border-radius: 10px;
+  pointer-events: auto;
+
+}
+
+.popup_1 .table_setting {
+  width: 700px;
+}
+
+
+
+
+.filtering{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+.site-map{
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+@media (max-width: 720) {
+  .popup_1 {
+    top: 35%;
+    left: 35%;
+    width: 90%; /* Adjust the width for smaller screens */
+    max-height: 80vh; /* Adjust the max height for smaller screens */
+  }
+
+  .tournament-card {
+    width: 100%; /* Full width for mobile devices */
+    margin-bottom: 15px;
+  }
+
+  .team-images img {
+    width: 30px; /* Reduce the image size for smaller screens */
+    height: 30px;
+  }
+  
+}
+
+
+.table-center1{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.tournament_pic{
+  background-image: url(images/soccer-ball\ 1.jpg);
+}
+
+
+
